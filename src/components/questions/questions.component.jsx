@@ -1,15 +1,28 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./questions.styles.scss";
+import ProgressBar from "../../components/progress-bar/progress-bar.component";
 
-class Questions extends Component {
-  render() {
-    return (
-      <div>
-        <h2>question 1</h2>
-      </div>
-    );
-  }
+export default function Questions() {
+  const [value, updateValue] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      updateValue((oldValue) => {
+        const newValue = oldValue + 10;
+
+        if (newValue === 100) {
+          clearInterval(interval);
+        }
+
+        return newValue;
+      });
+    }, 1000);
+  }, []);
+
+  return (
+    <div>
+      <ProgressBar value={value} />
+    </div>
+  );
 }
-
-export default Questions;
