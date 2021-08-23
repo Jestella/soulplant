@@ -1,6 +1,6 @@
 // Question Category
 // 1. color: common / unique
-// 2. size: small / large
+// 2. size: small / big
 // 3. pet friendly: yes / no
 // 4. water: often / not often
 

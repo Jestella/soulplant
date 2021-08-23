@@ -21,13 +21,13 @@ class Home extends Component {
 
   addValue(e) {
     e.preventDefalut();
-    if (this.state.value != undefined) {
+    if (this.state.value !== undefined) {
       alert("Select A or B");
     }
   }
 
   updateInput(e) {
-    this.state = { value: e.target.value };
+    this.setState = { value: e.target.value };
   }
 
   render() {
@@ -38,13 +38,18 @@ class Home extends Component {
           <h1>FIND YOUR SOUL PLANT 🌱</h1>
           <div className="questions_main">
             <article>
-              <h3 class="question">Question here</h3>
               <input id="type" type="hidden" alue="COLOR" />
-              <button onClick={() => this.hideComponent("showComponent")}>
+              <button
+                class="start_btn"
+                onClick={() => this.hideComponent("showComponent")}
+              >
                 Start
               </button>
             </article>
-            <div>{showComponent && <Questions />}</div>
+            <div>
+              {showComponent && <Questions />}
+              <div className="question_here">Questions here</div>
+            </div>
             <div className="buttons">
               <button id="a" type="button">
                 select A
