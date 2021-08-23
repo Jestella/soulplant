@@ -5,7 +5,7 @@ import "./header.styles.scss";
 const Header = () => (
   <div className="header">
     <div>
-      <p>Soul Plant</p>
+      <p>🌱 Soul Plant</p>
     </div>
   </div>
 );

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import Questions from "../../components/questions/questions.component";
+import Button from "../../components/button/button.component";
 
 import "./home.styles.scss";
-
-import Questions from "../../components/questions/questions.component";
 
 class Home extends Component {
   constructor() {
@@ -35,12 +35,12 @@ class Home extends Component {
     return (
       <div className="home">
         <div className="home_container">
-          <h1>FIND YOUR SOUL PLANT 🌱</h1>
+          <h1>FIND YOUR SOUL PLANT</h1>
           <div className="questions_main">
             <article>
               <input id="type" type="hidden" alue="COLOR" />
               <button
-                class="start_btn"
+                className="start_btn"
                 onClick={() => this.hideComponent("showComponent")}
               >
                 Start
@@ -51,14 +51,10 @@ class Home extends Component {
               <div className="question_here">Questions here</div>
             </div>
             <div className="buttons">
-              <button id="a" type="button">
-                select A
-              </button>
-              <button id="b" type="button">
-                select B
-              </button>
+              <Button id="btn_a">select A</Button>
+              <Button id="btn_b">select B</Button>
             </div>
-            select
+
             <form onSubmit={this.addValue}>
               <input
                 type="text"
