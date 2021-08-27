@@ -1,6 +1,6 @@
 # 🌱 Find Your Soul Plant
 
-##### Live Demo: https://jestella.github.io/soulplant
+##### Live Demo: https://jestella.github.io/soulplant (not ready yet)
 
 ##### Structure
 
