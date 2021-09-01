@@ -5,7 +5,7 @@ import "./footer.styles.scss";
 const Footer = () => (
   <div className="footer">
     <div className="footer_container">
-      <p>footer here</p>
+      <p>Soul Plant 2021 © Stella Lee</p>
     </div>
   </div>
 );
